@@ -1,6 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style>
+        #loading {
+            position: fixed;
+            top: 0;
+            z-index: 100000;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #02070d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 2s;
+        }
+        #loading.hide {
+            opacity: 0;
+            z-index: -1000;
+        }
+        #loading .catchy {
+            color: #fff;
+            text-shadow: 0px 0px 10px #49e9ff50;
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+        #loading .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .center .loader {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 10em;
+            gap: 1.5em;
+        }
+        .loader .bar {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color:  #49e9ff;
+            animation-name: loader;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: calc(var(--i) * 0.4s);
+            box-shadow: 0px 0px 10px #bf49ff;
+        }
+        @keyframes loader {
+            0% {
+                height: 10px;
+            }
+            50% {
+                height: calc(3em + var(--i)*1em);
+            }
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +82,25 @@
 
 </head>
 <body>
+
+
+    <section id="loading">
+        <div class="center">
+            <div class="loader">
+                <div class="bar" style="--i: 0;"></div>
+                <div class="bar" style="--i: 1;"></div>
+                <div class="bar" style="--i: 2;"></div>
+                <div class="bar" style="--i: 3;"></div>
+                <div class="bar" style="--i: 2;"></div>
+                <div class="bar" style="--i: 1;"></div>
+                <div class="bar" style="--i: 0;"></div>
+            </div>
+            <div class="catchy">
+                Please wait while we light the developerfolio for you.
+            </div>
+        </div>
+    </section>
+
     
     <section id="nav">
         <div class="container">
