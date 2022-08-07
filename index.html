@@ -19,14 +19,21 @@
             transition: 2s;
         }
         #loading.hide {
+            opacity: 0.3;
+            z-index: -1;
+            transform: rotate(-45deg) scale(4);
+        }
+        #loading.hide .catchy {
             opacity: 0;
-            z-index: -1000;
+            position: absolute;
         }
         #loading .catchy {
             color: #fff;
             text-shadow: 0px 0px 10px #49e9ff50;
             font-family: monospace;
             font-size: 1.2em;
+            text-align: center;
+            transition: 1.5s;
         }
         #loading .center {
             display: flex;
@@ -106,6 +113,10 @@
         <div class="container">
             <div class="logo">
                 <a class="link" href="">Parvat</a>
+                <div class="toggler">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
             <div class="links">
                 <a class="link">About</a>
