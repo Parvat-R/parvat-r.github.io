@@ -1,150 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <style>
-        #loading {
-            position: fixed;
-            top: 0;
-            z-index: 100000;
-
-            width: 100vw;
-            height: 100vh;
-
-            background-color: #02070d;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: 2s;
-        }
-        #loading.hide {
-            opacity: 0.3;
-            z-index: -1;
-            transform: rotate(-45deg) scale(4);
-        }
-        #loading.hide .catchy {
-            opacity: 0;
-            position: absolute;
-        }
-        #loading .catchy {
-            color: #fff;
-            text-shadow: 0px 0px 10px #49e9ff50;
-            font-family: monospace;
-            font-size: 1.2em;
-            text-align: center;
-            transition: 1.5s;
-        }
-        #loading .center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .center .loader {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            height: 10em;
-            gap: 1.5em;
-        }
-        .loader .bar {
-            width: 10px;
-            height: 10px;
-            border-radius: 10px;
-            background-color:  #49e9ff;
-            animation-name: loader;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-delay: calc(var(--i) * 0.4s);
-            box-shadow: 0px 0px 10px #bf49ff;
-        }
-        @keyframes loader {
-            0% {
-                height: 10px;
-            }
-            50% {
-                height: calc(3em + var(--i)*1em);
-            }
-        }
-    </style>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parvat R - Developerfolio</title>
-    <meta name="keywords" content="parvat, parvat r, r parvat, parvat_r, r_parvat, parvatr, rparvat">
-    <meta name="description" content="I am Parvat R a fullstack python developer, and this is my developerfolio.">
-
+    <title>Parvat R</title>
+    <meta name="keywords" content="parvat, Parvat, Parvat R, r parvat, parvat">
+    <meta name="description" content="I am Parvat, a fullstack python developer. This is my developerfolio.">
 
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
 
-    <!-- <link rel="stylesheet" href="/fullPage.js-4.0.9/dist/fullpage.min.css"> -->
-    <link rel="stylesheet" href="/index.css">
-    
-
-    <script src="/jquery.min.js"></script>
     <script src="/index.js"></script>
 
 </head>
 <body>
-
-
-    <section id="loading">
-        <div class="center">
-            <div class="loader">
-                <div class="bar" style="--i: 0;"></div>
-                <div class="bar" style="--i: 1;"></div>
-                <div class="bar" style="--i: 2;"></div>
-                <div class="bar" style="--i: 3;"></div>
-                <div class="bar" style="--i: 2;"></div>
-                <div class="bar" style="--i: 1;"></div>
-                <div class="bar" style="--i: 0;"></div>
+    
+    <section id="nav" close>
+        <div id="navbar">
+            <div nitem>
+                <a href="" link logo></a>
             </div>
-            <div class="catchy">
-                Please wait while we light the developerfolio for you.
+            <div nitem>
+                <a href="#about" link>About</a>
+                <a href="#contact" link>Contact</a>
+                <a href="#links" link>Links</a>
+                <a href="#projects" link>Buy Me A Coffee</a>
             </div>
         </div>
     </section>
 
-    
-    <section id="nav">
-        <div class="container">
-            <div class="logo">
-                <a class="link" href="">Parvat</a>
-                <div class="toggler">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+    <section page>
+        <section containter>
+            <div citem>
+                <div title>
+                    <div a>I am</div>
+                    <div b>Parvat</div>
+                </div>
+                <div>
+                    And, you are viewing my developerfolio.
                 </div>
             </div>
-            <div class="links">
-                <a class="link">About</a>
-                <a class="link">Works</a>
-                <a class="link">Contact</a>
-            </div>
-        </div>
-    </section>    
-
-
-
-    <section id="pages">
-
-        <section class="page head">
-            <div class="cover">
-                <div class="title">
-                    <div class="iam">I am</div>
-                    <div class="name hide">Parvat</div>
-                </div>
-                <div class="catchytext">
-                    The <u>Developer</u>folio - a programmatical life.
+            <div class="citem">
+                <div class="box">
+                    <div ele>
+                        <div title>
+                            <i class="bi bi-stack"></i>
+                            <span>Fullstack Developer</span>
+                        </div>
+                        <div content>
+                            I can work with both front-end and back-end to meet up with the expectations.
+                        </div>
+                    </div>
+                    <div ele>
+                        <div title>
+                            <i class="bi bi-browser-firefox"></i>
+                            <span>Python Web Applications</span>
+                        </div>
+                        <div content>
+                            I use the power of python and to create awesome webapps using Flask or Fast Api.
+                        </div>
+                    </div>
+                    <div ele>
+                        <div title>
+                            <i class="bi bi-robot"></i>
+                            <span>Telegram Bot Developer</span>
+                        </div>
+                        <div content>
+                            Telegram is a wounderful communication application, and creating user interactive bots in telegram is a great deal.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+    </section>
 
+    <section id="about" page>
+        <section container>
+            <div citem>
+                <div title>
+                    About Me
+                </div>
+                <div>
+                    Read this to know about me.
+                </div>
+            </div>
+            <div citem>
+                <div item>
+                    <i class="bi bi-gender-male"></i>
+                    Born on <span>2nd Jan 2005</span>
+                </div>
+                <div item>
+                    <i class="bi bi-geo"></i>
+                    Living in Salem, <span>Tamil Nadu, India.</span>
+                </div>
+                <div item>
+                    <i class="bi bi-mortarboard"></i>
+                    Apprehending my UG under <span>CSE</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="links" page>
+        <section container>
+            <div citem>
+                <div title>
+                    Links To Refer Me.
+                </div>
+            </div>
+            <div citem>
+                <div ele><a href="https://github.com/Parvat-R">Github</a></div>
+                <div ele><a href="https://telegram.me/Parvat_R">Telegram</a></div>
+                <div ele><a href="https://stackoverflow.com/users/14785531/parvat-r">Stackoverflow</a></div>
+                <div ele><a href="https://dev.to/parvat_r">DEV.to</a></div>
+                <div ele><a href="https://dev.to/parvat_web_dev">Fiverr</a></div>
+                <div ele><a href="https://www.buymeacoffee.com/parvatr">Buy Me A Coffee</a></div>
+            </div>
+        </section>
+    </section>
+
+    <section id="contact">
+        <section container>
+            <div citem>
+                <div title>
+                    Contact me.
+                </div>
+                <div desc>
+                    Lets get into a smooth convo. Find me at these links.
+                </div>
+            </div>
+            <div citem>
+                <div elem><a href="https://telegram.me/parvat_r">Telegram</a></div>
+                <div elem><a href="mailto:replyerrors.parvat@gmail.com">Gmail</a></div>
+                <div elem><a href="https://discord.com/channels/987319225637040178/987319225637040180">Discord</a></div>
+            </div>
+        </section>
     </section>
 
 
+    <section id="work">
+        <section container>
+            <div citem>
+                <div title>
+                    Hire me?
+                </div>
+            </div>
+            <div citem>
+                <div elem>
+                    I am available for part-time works. I have experience in working with a team, and would be a great teammate. Text me if you are interested in me.
+                    <a href="https://telegram.me/Parvat_R">Text Me.</a>
+                </div>
+            </div>
+        </section>
+    </section>
 
+
+    <section id="footer">
+        <section container>
+            <div citem>
+                <div list>
+                    <a href="/LICENSE">License</a>
+                </div>
+            </div>
+            <div citem>
+
+            </div>
+        </section>
+    </section>
+
+
+    <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="parvatr" data-color="#FFDD00" data-emoji=""  data-font="Comic" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script> -->
 </body>
 </html>
