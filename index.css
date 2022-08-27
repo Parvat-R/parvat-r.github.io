@@ -506,9 +506,6 @@ a {
 
 
 @media only screen and (max-width: 650px) {
-    body {
-        font-size: 18px:
-    }
     [page] [container] {
         min-width: 100%;
     }
