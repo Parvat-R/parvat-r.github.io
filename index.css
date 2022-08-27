@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+[mt] {
+    display: none;
+    color: blue; 
+    padding: .5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#nav[close] [mt] {
+    background-color: #fff;
+}
+
+#main [citem] [title] ~ div {
+    color: #fff9;
+}
+
 #footer [container] {
     display: flex;
     align-items: center;
@@ -67,11 +83,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 99vh;
+    min-height: 800px;
 }
 
 [page] {
     width: 100vw;
-    min-height: 80vh;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +173,7 @@ section#links {
     width: 60%;
     align-items: center;
     justify-content: space-between;
-    background: #0003;
+    background: #fff7;
     padding: .4em 1.5em;
     border-radius: 10px;
     border: 1px solid #fff3;
@@ -172,7 +189,7 @@ section#links {
 
 #navbar [nitem] [link] {
     font-size: 1.2em;
-    color: #ffa2cc66;
+    color: #1b56ffc2;
     padding: .5em .7em;
     text-decoration-color: #ff33cc00;
     transition: .3s;
@@ -263,6 +280,10 @@ section#links {
     color: #29214b;
     text-shadow: -4px -4px 3px #fff0;
     font-weight: bold;
+}
+
+#links [title] {
+    color: yellow;
 }
 
 [citem] [title] ~ div {
@@ -385,5 +406,131 @@ a {
     }
     .box {
         padding: 0em;    
+    }
+}
+@media only screen and (max-width: 1080px) {
+    #main [title] {
+        flex-direction: column;
+    }
+    #main [title] [a] {
+        transform: none;
+    }
+    [page] [container] {
+        width: 100%;
+    }
+    [page] [container] [citem] {
+        width: 90%;
+    }
+    #main [container] [citem]:nth-child(2) {
+        min-width: 80vw;
+        align-items: center;
+        text-align: center;
+    }
+    .box {
+        width: 100%;
+    }
+    .box [ele]{
+        align-items: center;
+    }
+    .box hr {
+        width: 20%;
+    }
+    [page] [container] {
+        flex-direction: column;
+        gap: 2em;
+    }   
+    #about, #contact {
+        gap: 0em;
+        flex-direction: column;
+    }
+    [p1] {
+        align-items: center;
+        justify-content: center;
+    }
+    [p1] hr {
+        width: 70%;
+        margin: 2em 0 0 0;
+    }
+}
+
+@media only screen and (max-height: 910px) {
+    [page] {
+        min-height: 900px;
+    }
+    #main {
+        min-height: 900px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navbar [mt] {
+        display: revert;
+    }
+    #nav { 
+        width: 10vw; 
+        margin: auto;
+    }
+    #nav {
+        width: 100vw;
+        align-self: center;
+        justify-self: center;
+        right: 0%;
+    }
+    #nav #navbar {
+        min-width: 300px;
+        width: 90%;
+    }
+
+    #nav #navbar [nitem]:nth-child(3){
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 110%;
+        right: 0;
+        background-color: #ffffffde;
+        border-radius: 10px;
+        z-index: 1000;
+        opacity: 0;
+        transform: scale(0);
+        transition: .3s;
+    }
+    #nav[close] #navbar {
+        position: relative;
+    }
+    #nav[close] #navbar [nitem]:nth-child(3){
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 5px 10px #0008;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 18px:
+    }
+    [page] [container] {
+        min-width: 100%;
+    }
+    [page] [container] [citem] {
+        min-width: 70%;
+    }
+    [citem] [title] {
+        font-size: 2em;
+    }
+    [citem] {
+        font-size: .9em;
+    }
+    #footer [container] {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 470px) {
+    [page] [container] {
+        min-width: 100%;
+    }
+    [page] [container] [citem] {
+        min-width: 90%;
     }
 }
