@@ -40,7 +40,7 @@ class Star {
     update() {
         this.mesh.position.x += this.velocityX + (mouseX * 0.0005);
         this.mesh.position.y += this.velocityY + (mouseY * 0.0005);
-        this.mesh.position.z += this.velocityZ * ( scrollY * Math.random() );
+        this.mesh.position.z += this.velocityZ * ( Math.abs(scrollY) * Math.random() );
 
         if (Math.abs(this.mesh.position.x) > window.innerWidth/4 || Math.abs(this.mesh.position.y) > window.innerHeight/4 || this.mesh.position.z > 300 || this.mesh.position.z < -100) {
             this.reset();

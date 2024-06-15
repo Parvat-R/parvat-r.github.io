@@ -46,6 +46,7 @@ body {
     width: 92%;
     padding: .5em;
     margin-top: 10%;
+    max-width: 1100px;
 }
 
 .links {
@@ -95,6 +96,7 @@ a.link:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 .name {
@@ -148,14 +150,16 @@ a.link:hover {
     width: 80px;
     height: 80px;
     position: absolute;
-    bottom: -100%;
+    top: 100%;
     background-image: url("/static/keyboard_double_arrow_down_48dp_FILL0_wght400_GRAD0_opsz48.svg");
     background-repeat: no-repeat;
     background-position: 20px 15px;
     background-size: 40px;
     animation-name: bounce;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 2s;
+    opacity: .5;
+    transition: .3s;
 }
 @keyframes bounce {
     0% {
@@ -168,6 +172,7 @@ a.link:hover {
 
 .title h1 {
     font-size: 3em;
+    opacity: .8;
     border-bottom: 1px solid #2f243a36;
     align-self: flex-start;
     width: 100%;
@@ -193,9 +198,16 @@ a.link:hover {
 }
 
 #about .page {
-        padding: 2em;
+    padding: 2em;
     background: #fac9b8a5;
     border-radius: 10px;
     backdrop-filter: blur(5px) brightness(1.1);
     border: 1px solid #db8a7473;
+}
+
+.hero:hover::after {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    animation-duration: .3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
