@@ -31,7 +31,7 @@ class ZoomScroller {
 
     scrollListener(event) {
         var scrollY = Math.abs(document.body.getBoundingClientRect().top);
-        var pageNum = Math.floor(scrollY / (this.height));
+        var pageNum = Math.floor((scrollY / (this.height)) / 2);
         console.log(pageNum)
         if (pageNum != this.inView) {
             this.changeView(pageNum, this.inView);
