@@ -151,7 +151,7 @@ a.link:hover {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 100%;
+    top: 80%;
     background-image: url("/static/keyboard_double_arrow_down_48dp_FILL0_wght400_GRAD0_opsz48.svg");
     background-repeat: no-repeat;
     background-position: 20px 15px;
