@@ -131,7 +131,7 @@ a.link:hover {
     margin-bottom: 20%;
 }
 
-#about {
+#about, .contactPage {
     position: relative;
     display: flex;
     align-items: center;
