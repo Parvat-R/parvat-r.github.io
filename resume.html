@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parvat R - Resume</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --accent-color: #3498db;
+            --card-bg: #fff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --header-bg: #3498db;
+            --header-text: #fff;
+        }
+
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #f5f5f5;
+            --accent-color: #64b5f6;
+            --card-bg: #1e1e1e;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --header-bg: #1a1a1a;
+            --header-text: #64b5f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .timer {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: var(--header-text);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin: 25px 0 15px 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item:last-child, .project-item:last-child, .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .item-date {
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            font-weight: bold;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px var(--shadow-color);
+            z-index: 100;
+            font-weight: bold;
+        }
+
+        .theme-toggle:hover {
+            opacity: 0.9;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .languages {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .timer {
+                position: static;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="timer" id="timer">00:00:00</div>
+            <h1>PARVAT R</h1>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:vidyutparvat2@gmail.com">vidyutparvat2@gmail.com</a></span>
+                <span>📱 +91 63798 50419</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/parvat-r/" target="_blank">LinkedIn</a></span>
+                <span>📍 Salem</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Summary</h2>
+            <p>Aspiring full-stack developer seeking opportunities to apply my skills in web development and software engineering. Eager to leverage my strong foundation in computer science, quick learning ability, and passion for innovative technologies to contribute to dynamic projects. Committed to growth and delivering high-quality solutions that drive business success.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">B.E. Computer Science And Engineering</div>
+                    <div class="item-date">10/2022 - Ongoing</div>
+                </div>
+                <div class="item-subtitle">Sona College of Technology</div>
+            </div>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">High School</div>
+                    <div class="item-date">2020 - 2022</div>
+                </div>
+                <div class="item-subtitle">Sri Vidya Mandir CBSE</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Web Design Intern</div>
+                    <div class="item-date">10/2024 - 01/2025</div>
+                </div>
+                <div class="item-subtitle">Zoftcorp (Hybrid)</div>
+                <p>IT solutions and consulting agency.</p>
+                <ul>
+                    <li>Created websites for clients using WordPress</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">KureKid</div>
+                    <div class="item-date">01/2025 - Ongoing</div>
+                </div>
+                <div class="item-subtitle">Sona College of Technology</div>
+                <p>An approach to support the autistic kids with their emotional capabilities.</p>
+                <ul>
+                    <li>Visited autistic center to observe and understand autistic students.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Threads Website (Team Leader)</div>
+                    <div class="item-date">02/2025 - 02/2025</div>
+                </div>
+                <div class="item-subtitle">Sona College of Technology</div>
+                <p>A fullstack website for the National Symposium by Dept. of CSE.</p>
+                <ul>
+                    <li>Handled more than 1000 student's registrations.</li>
+                    <li>Uses MongoDB for backend.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Volunteering</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Threads Overall Organizer</div>
+                    <div class="item-date">02/2025</div>
+                </div>
+                <div class="item-subtitle">Sona College of Technology</div>
+                <p>Organized a national level symposium "Threads25" under the department of Computer Science and Engineering. The event was a grand success with around 1000 students participating from other colleges.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML CSS</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Full Stack</span>
+                <span class="skill-tag">MongoDB</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Languages</h2>
+            <div class="languages">
+                <span>English</span>
+                <span>Tamil</span>
+                <span>Hindi</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Achievements</h2>
+            <div class="experience-item">
+                <div class="item-title">Persona - Best Performer Of CSE</div>
+                <p>Received the title "Best Male Performer Of CSE" for my exceptional communication and soft skills from the Dept. of Soft Skills.</p>
+            </div>
+            <div class="experience-item">
+                <div class="item-title">Tech Guru</div>
+                <p>Received the title "Tech Guru" of CSE for possessing technical skills beyond the typical student level.</p>
+            </div>
+            <div class="experience-item">
+                <div class="item-title">Code Clash Winner</div>
+                <p>Won the Code Clash competition conducted by the CSE department at CIT College.</p>
+            </div>
+        </section>
+    </div>
+
+    <button class="theme-toggle" id="theme-toggle">Toggle Dark Mode</button>
+
+    <script>
+        // Welcome alert
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                alert('Welcome to Parvat R\'s Resume! Click the button in the bottom right to toggle dark mode.');
+            }, 500);
+        });
+
+        // Timer functionality
+        function updateTimer() {
+            const timerElement = document.getElementById('timer');
+            let seconds = 0;
+            setInterval(() => {
+                seconds++;
+                const hours = Math.floor(seconds / 3600).toString().padStart(2, '0');
+                const minutes = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+                const secs = (seconds % 60).toString().padStart(2, '0');
+                timerElement.textContent = `${hours}:${minutes}:${secs}`;
+            }, 1000);
+        }
+        updateTimer();
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
