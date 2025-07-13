@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="/static/Plugin icon - 1parvat 124x124.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/static/RemixFonts/remixicon.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <link rel="stylesheet" href="scroller.css">
+    <!-- <link rel="stylesheet" href="scroller.css"> -->
 </head>
+
 <body>
+
     <canvas id="starsBg"></canvas>
     <section class="nav">
         <div class="navbar">
@@ -21,13 +27,14 @@
                 <div>Parvat R</div>
             </div>
             <div class="links">
+                <div class="topper hide"></div>
                 <a href="#" class="link">About</a>
                 <a href="#" class="link">Social</a>
                 <a href="#" class="link contact">Contact Me</a>
             </div>
         </div>
     </section>
-    <div class="hero zoom-scroll">
+    <div class="hero">
         <div class="page">
             <div class="hi">Hey There! I am</div>
             <div class="name">
@@ -36,23 +43,66 @@
             <div class="desc">An Enginnering Student.</div>
         </div>
     </div>
+    <div class="topper"></div>
     <div id="about" class="zoom-scroll">
         <div class="page">
             <div class="title">
                 <h1>About Me</h1>
-                <div class="desc">Hello! I'm Parvat, an enthusiastic Programmer with a deep passion for Coding and Designing. Over the years, I have cultivated a rich and diverse background in Programming, allowing me to utilize the art of Computer. I thrive on challenges and continuously seek opportunities to learn and grow.</div>
+                <div class="desc">Hello! I'm Parvat, an enthusiastic Programmer with a deep passion for Coding and
+                    Designing. Over the years, I have cultivated a rich and diverse background in Programming, allowing
+                    me to utilize the art of Computer. I thrive on challenges and continuously seek opportunities to
+                    learn and grow.</div>
             </div>
         </div>
     </div>
-    <div class="contactPage zoom-scroll">
+    <div class="contactPage">
         <div class="page">
             <div class="title">
-                    <h1>Contact Me</h1>
-                    <div class="desc">Wanna talk?</div>
-                </div>
+                <h1>Contact Me</h1>
+                <div class="desc">Wanna talk?</div>
+            </div>
+            <div class="cardContainer">
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-github-fill"></i>
+                        <div class="uname">Github</div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-telegram-fill"></i>
+                        <div class="uname">Telegram</div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-discord-fill"></i>
+                        <div class="uname">Discord</div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-stack-overflow-fill"></i>
+                        <div class="uname">Stack Overflow</div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-mail-fill"></i>
+                        <div class="uname">Mail</div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="content">
+                        <i class="ri-linkedin-box-fill"></i>
+                        <div class="uname">LinkedIn</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
-<script src="scroller.js"></script>
+<!-- <script src="scroller.js"></script> -->
 <script src="index.js"></script>
+
 </html>

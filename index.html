@@ -1,3 +1,369 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Parvat R</title><meta name="keywords" content="parvat, Parvat, Parvat R, r parvat, parvat"><meta name="description" content="I am Parvat, a fullstack python developer. This is my developerfolio."><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inconsolata&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/parvat-r/parvat-r.github.io@latest/index.css"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/parvat-r/parvat-r.github.io/static/Plugin icon - 1parvat 512.png" type="image/x-icon"></head><body><section id="nav"><div id="navbar"><div nitem><a href="/" link logo>Parvat R</a></div><div nitem><a href="#" mt onclick="toggleNav()">Menu</a></div><div nitem><a href="#about" link>About</a><a href="#contact" link>Contact</a><a href="#links"link>Links</a><a href="#projects" link>Buy Me A Coffee</a></div></div></section><section id="main" page><section container><div citem><div title><div a>I am</div><div b>Parvat</div></div><div>And, you are viewing my developerfolio.</div></div><div citem><div class="box"><div ele><div title><i class="bi bi-stack"></i><span>Fullstack Developer</span></div><div content>I can work with both front-end and back-end to meet up with the expectations.</div></div><hr /><div ele><div title><i class="bi bi-browser-firefox"></i><span>Python Web Applications</span></div><div content>I use the power of python and to create awesome webapps using Flask or Fast Api.</div></div><hr /><div ele><div title><i class="bi bi-robot"></i><span>Telegram Bot Developer</span></div><div content>Telegram is a wounderful communication application, and creating user interactivebots in telegram is a great deal.</div></div></div></div></section></section><section page p1><section id="about" container><div citem><div title>About Me</div><div>Read this to know about me.</div></div><div citem><div item><i class="bi bi-gender-male"></i>Born on <span>2nd Jan 2005</span></div><div item><i class="bi bi-geo"></i>Living in Salem, <span>Tamil Nadu, India.</span></div><div item><i class="bi bi-mortarboard"></i>Apprehending my UG under <span>CSE</span></div></div></section><hr /><section id="contact" container><div citem><div title>Contact me.</div><div desc>Lets get into a smooth convo. Find me at these links.</div></div><div citem><div elem><a href="https://telegram.me/parvat_r">Telegram</a></div><div elem><a href="mailto:replyerrors.parvat@gmail.com">Gmail</a></div><div elem><a href="https://discord.com/channels/987319225637040178/987319225637040180">Discord</a></div></div></section></section><section id="links" page><section container><div citem><div title>Links To Refer Me.</div></div><div citem><div ele><a href="https://github.com/Parvat-R">Github</a></div><div ele><a href="https://telegram.me/Parvat_R">Telegram</a></div><div ele><a href="https://stackoverflow.com/users/14785531/parvat-r">Stackoverflow</a></div><div ele><a href="https://dev.to/parvat_r">DEV.to</a></div><div ele><a href="https://dev.to/parvat_web_dev">Fiverr</a></div><div ele><a href="https://www.buymeacoffee.com/parvatr">Buy Me A Coffee</a></div></div></section></section><section id="work" page><section container><div citem><div title>Hire me?</div></div><div citem><div elem>I am available for part-time works. I have experience in working with a team, and would be a great teammate. Text me if you are interested in me.<a href="https://telegram.me/Parvat_R">TextMe.</a></div></div></section></section><section id="footer"><section container><div citem><div list><a href="/" name>Parvat R</a><a href="#">&copy; Copyright 2022 Parvat R.</a><ahref="/LICENSE.html">License Under GPL GNU.</a><a href="/LICENSE.html#termsandconditions">TermsAnd Conditions.</a><a href="https://github.com/parvat-r/parvat-r.github.io">Source Code</a></div></div><div citem><div list><a href="#">Contact</a><a href="#">Hire Me</a><a href="#">Links</a><ahref="/attributions.html">Attribution</a></div></div></section></section><script>function toggleNav() { document.getElementById("nav").toggleAttribute("close") };alert("My New Site Design Comming Soon! I am working on it.");</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parvat R</title>
+    <meta name="keywords" content="parvat, Parvat, Parvat R, r parvat, parvat">
+    <meta name="description" content="I am Parvat, a fullstack python developer. This is my developerfolio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/parvat-r/parvat-r.github.io@latest/index.css">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/parvat-r/parvat-r.github.io/static/Plugin icon - 1parvat 512.png" type="image/x-icon">
+    <script src="https://www.paypal.com/sdk/js?client-id=ARAMpEabSFIimqSXwSFFyQIpHjnwkqfV0l8PA5WtoNEVgbX2R_q88P3BbX0_Gwapkx4eOIOzIUt1GAYO&currency=USD"></script>
+    <style>
+      .donate-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .donate-btn {
+        background: linear-gradient(45deg, #0070ba, #003087);
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: transform 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      .donate-btn:hover {
+        transform: scale(1.05);
+        color: white;
+        background: linear-gradient(45deg, #005ea6, #002569);
+      }
+      .donate-btn i {
+        font-size: 14px;
+      }
+      .paypal-button-container {
+        margin-top: 10px;
+      }
+      .paypal-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .paypal-button-wrapper {
+        min-width: 150px;
+      }
+      .amount-selector {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+      .amount-btn {
+        background: #f0f0f0;
+        border: 2px solid #ddd;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.2s;
+      }
+      .amount-btn:hover {
+        background: #e0e0e0;
+      }
+      .amount-btn.selected {
+        background: #0070ba;
+        color: white;
+        border-color: #0070ba;
+      }
+      .payment-status {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+      }
+      .payment-status.success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      .payment-status.error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="nav">
+      <div id="navbar">
+        <div nitem>
+          <a href="/" link logo>Parvat R</a>
+        </div>
+        <div nitem>
+          <a href="#" mt onclick="toggleNav()">Menu</a>
+        </div>
+        <div nitem>
+          <a href="#about" link>About</a>
+          <a href="#contact" link>Contact</a>
+          <a href="#links" link>Links</a>
+          <a href="#projects" link>Buy Me A Coffee</a>
+        </div>
+      </div>
+    </section>
+    <section id="main" page>
+      <section container>
+        <div citem>
+          <div title>
+            <div a>I am</div>
+            <div b>Parvat</div>
+          </div>
+          <div>And, you are viewing my developerfolio.</div>
+        </div>
+        <div citem>
+          <div class="box">
+            <div ele>
+              <div title>
+                <i class="bi bi-stack"></i>
+                <span>Fullstack Developer</span>
+              </div>
+              <div content>I can work with both front-end and back-end to meet up with the expectations.</div>
+            </div>
+            <hr />
+            <div ele>
+              <div title>
+                <i class="bi bi-browser-firefox"></i>
+                <span>Python Web Applications</span>
+              </div>
+              <div content>I use the power of python and to create awesome webapps using Flask or Fast Api.</div>
+            </div>
+            <hr />
+            <div ele>
+              <div title>
+                <i class="bi bi-robot"></i>
+                <span>Telegram Bot Developer</span>
+              </div>
+              <div content>Telegram is a wounderful communication application, and creating user interactivebots in telegram is a great deal.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section page p1>
+      <section id="about" container>
+        <div citem>
+          <div title>About Me</div>
+          <div>Read this to know about me.</div>
+        </div>
+        <div citem>
+          <div item>
+            <i class="bi bi-gender-male"></i>Born on <span>2nd Jan 2005</span>
+          </div>
+          <div item>
+            <i class="bi bi-geo"></i>Living in Salem, <span>Tamil Nadu, India.</span>
+          </div>
+          <div item>
+            <i class="bi bi-mortarboard"></i>Apprehending my UG under <span>CSE</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact" container>
+        <div citem>
+          <div title>Contact me.</div>
+          <div desc>Lets get into a smooth convo. Find me at these links.</div>
+        </div>
+        <div citem>
+          <div elem>
+            <a href="https://telegram.me/parvat_r">Telegram</a>
+          </div>
+          <div elem>
+            <a href="mailto:replyerrors.parvat@gmail.com">Gmail</a>
+          </div>
+          <div elem>
+            <a href="https://discord.com/channels/987319225637040178/987319225637040180">Discord</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="links" page>
+      <section container>
+        <div citem>
+          <div title>Links To Refer Me.</div>
+        </div>
+        <div citem>
+          <div ele>
+            <a href="https://github.com/Parvat-R">Github</a>
+          </div>
+          <div ele>
+            <a href="https://telegram.me/Parvat_R">Telegram</a>
+          </div>
+          <div ele>
+            <a href="https://stackoverflow.com/users/14785531/parvat-r">Stackoverflow</a>
+          </div>
+          <div ele>
+            <a href="https://dev.to/parvat_r">DEV.to</a>
+          </div>
+          <div ele>
+            <a href="https://dev.to/parvat_web_dev">Fiverr</a>
+          </div>
+          <div ele>
+            <a href="https://www.buymeacoffee.com/parvatr">Buy Me A Coffee</a>
+            <div class="paypal-button-container">
+              <div class="amount-selector">
+                <button class="amount-btn selected" onclick="selectAmount(1)">$1</button>
+                <button class="amount-btn" onclick="selectAmount(5)">$5</button>
+                <button class="amount-btn" onclick="selectAmount(10)">$10</button>
+              </div>
+              <div id="paypal-button-container"></div>
+              <div id="payment-status" class="payment-status"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="work" page>
+      <section container>
+        <div citem>
+          <div title>Hire me?</div>
+        </div>
+        <div citem>
+          <div elem>I am available for part-time works. I have experience in working with a team, and would be a great teammate. Text me if you are interested in me. <a href="https://telegram.me/Parvat_R">TextMe.</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="footer">
+      <section container>
+        <div citem>
+          <div list>
+            <a href="/" name>Parvat R</a>
+            <a href="#">&copy; Copyright 2022 Parvat R.</a>
+            <a href="/LICENSE.html">License Under GPL GNU. </a>
+            <a href="/LICENSE.html#termsandconditions">Terms And Conditions.</a>
+            <a href="https://github.com/parvat-r/parvat-r.github.io">Source Code</a>
+          </div>
+        </div>
+        <div citem>
+          <div list>
+            <a href="#">Contact</a>
+            <a href="#">Hire Me</a>
+            <a href="#">Links</a>
+            <a href="/attributions.html">Attribution </a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script>
+      function toggleNav() {
+        document.getElementById("nav").toggleAttribute("close")
+      };
+      
+      let selectedAmount = 1;
+      let paypalButtonRendered = false;
+      
+      function selectAmount(amount) {
+        selectedAmount = amount;
+        
+        // Update button states
+        document.querySelectorAll('.amount-btn').forEach(btn => {
+          btn.classList.remove('selected');
+        });
+        event.target.classList.add('selected');
+        
+        // Clear status message
+        hidePaymentStatus();
+        
+        // Re-render PayPal button with new amount
+        renderPayPalButton();
+      }
+      
+      function showPaymentStatus(message, isSuccess = false) {
+        const statusElement = document.getElementById('payment-status');
+        statusElement.textContent = message;
+        statusElement.className = `payment-status ${isSuccess ? 'success' : 'error'}`;
+        statusElement.style.display = 'block';
+      }
+      
+      function hidePaymentStatus() {
+        const statusElement = document.getElementById('payment-status');
+        statusElement.style.display = 'none';
+      }
+      
+      function renderPayPalButton() {
+        // Clear existing PayPal button
+        const container = document.getElementById('paypal-button-container');
+        container.innerHTML = '';
+        
+        // Check if PayPal SDK is loaded
+        if (typeof paypal === 'undefined') {
+          showPaymentStatus('PayPal SDK failed to load. Please refresh the page and try again.');
+          return;
+        }
+        
+        try {
+          // Render new PayPal button with selected amount
+          paypal.Buttons({
+            style: {
+              layout: 'horizontal',
+              color: 'blue',
+              shape: 'rect',
+              label: 'donate',
+              height: 40
+            },
+            createOrder: function(data, actions) {
+              return actions.order.create({
+                purchase_units: [{
+                  amount: {
+                    value: selectedAmount.toString(),
+                    currency_code: 'USD'
+                  },
+                  description: `Support Parvat R - Developer Portfolio ($${selectedAmount})`
+                }]
+              });
+            },
+            onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                const payerName = details.payer.name.given_name || 'Anonymous';
+                showPaymentStatus(`Thank you for your donation, ${payerName}! Your support means a lot.`, true);
+                console.log('Transaction completed:', details);
+              });
+            },
+            onError: function(err) {
+              console.error('PayPal Error:', err);
+              showPaymentStatus('An error occurred during the transaction. Please try again or contact support.');
+            },
+            onCancel: function(data) {
+              console.log('Transaction cancelled by user:', data);
+              showPaymentStatus('Transaction was cancelled. You can try again anytime.');
+            }
+          }).render('#paypal-button-container');
+          
+          paypalButtonRendered = true;
+        } catch (error) {
+          console.error('Error rendering PayPal button:', error);
+          showPaymentStatus('Failed to load payment button. Please refresh the page and try again.');
+        }
+      }
+      
+      // Initialize PayPal button when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        // Wait a bit for PayPal SDK to fully load
+        setTimeout(function() {
+          renderPayPalButton();
+        }, 1000);
+      });
+      
+      // Handle PayPal SDK load errors
+      window.addEventListener('error', function(event) {
+        if (event.target.src && event.target.src.includes('paypal.com')) {
+          showPaymentStatus('Failed to load PayPal services. Please check your internet connection and try again.');
+        }
+      });
+      
+      // Remove the alert as it's not needed
+      // alert("My New Site Design Coming Soon! I am working on it.");
+    </script>
+  </body>
+</html>

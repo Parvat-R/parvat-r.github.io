@@ -97,3 +97,29 @@ document.addEventListener('mousemove', (event) => {
 document.addEventListener('wheel', (event) => {
     scrollY += event.deltaY * 0.5;
 });
+
+var topper = document.querySelector('body > .topper');
+var linkTopper = document.querySelector('.links > .topper');
+document.addEventListener('scroll', () => {
+    console.log(topper.getBoundingClientRect().top)
+    if (topper.getBoundingClientRect().top < window.innerHeight/10) {
+        // scrolled below
+        // hide the topper
+        // show the linkTopper
+        if (!topper.classList.contains('hide')) topper.classList.add('hide');
+        if (linkTopper.classList.contains('hide')) linkTopper.classList.remove('hide');
+        console.log(linkTopper.classList.contains('hide'));
+    } else {
+        // scrolled above
+        // show the topper
+        // hide the linkTopper
+        if (topper.classList.contains('hide')) topper.classList.remove('hide');
+        if (!linkTopper.classList.contains('hide')) linkTopper.classList.add('hide');
+    }
+})
+topper.addEventListener('click', () => {
+    console.log("Clicked topper");
+    if (topper.classList.contains('up')) {
+        document.body.scrollIntoView()
+    }
+})
