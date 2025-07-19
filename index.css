@@ -104,6 +104,7 @@ a {
         font-size: 122px;
         line-height: 120px;
         font-family: 'DancingScript';
+        text-align: center;
     }
     & p {
         font-size: 16px;
@@ -334,4 +335,16 @@ a:hover {
     gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1em;
+}
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 16px;
+    }
+    a.magnet-box {
+        padding: 5px 10px;
+    }
+    h2, h3, h4, h5, h6, .container > .title {
+        font-size: 42px;
+    }
 }
