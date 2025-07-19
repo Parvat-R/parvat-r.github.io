@@ -71,7 +71,9 @@ a {
     font-family: 'DancingScript';
     padding: .5em 1.25em;
     border-radius: 15px;
+    border: 1px solid #0000;
     font-size: 18px;
+    transition: .3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .container {
@@ -273,7 +275,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transition: .3s cubic-bezier(0.62, 0.21, 0.67, 0.27);
+    transition: .3s ease-out;
     filter: grayscale(1) blur(100px);
     animation: wiggle 1s infinite ease-in-out;
     user-select: none;
@@ -309,4 +311,26 @@ img {
 a:hover {
     backdrop-filter: blur(100px) brightness(1.5);
     border: 1px solid;
+}
+
+#socials .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    width: 200px;
+    border: 1px solid #606060;
+    border-radius: 11px;
+    aspect-ratio: 3 / 1.5;
+    backdrop-filter: sepia(.6) brightness(1.5);
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
