@@ -29,6 +29,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 100px;
+    padding-bottom: 10vh;
 }
 
 h2, h3, h4, h5, h6, .container > .title {
