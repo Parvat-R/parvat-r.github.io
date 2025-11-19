@@ -494,6 +494,7 @@ section {
     box-shadow: 0 10px 30px rgba(20, 20, 16, 0.3);
 }
 
+
 @media (max-width: 768px) {
     .social-buttons {
         flex-direction: column;
