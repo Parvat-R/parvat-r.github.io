@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/JEEVANANDH.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,12 +18,15 @@
     <nav>
         <div class="container">
             <div class="logo">JEEVANANDH S</div>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div id="menu" class="" onclick="toggleNav()"> 
+                <div class="menu-btn">Menu</div>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -31,7 +34,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-image">
-                <img src="WhatsApp Image 2025-11-19 at 19.50.30_55d4551a.jpg" alt="Jeevanandh S">
+                <img id="hero-image-img" src="WhatsApp Image 2025-11-19 at 19.50.30_55d4551a.jpg" alt="Jeevanandh S">
             </div>
             <div class="hero-text-content">
                 <h1>JEEVANANDH S</h1>
@@ -44,9 +47,9 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
+            <h2>About Me</h2>
             <div class="about-layout">
                 <div class="about-text">
-                    <h2>About Me</h2>
                     <p>I'm Jeevanandh S, a videographer and photographer dedicated to capturing authentic, meaningful, and dynamic moments. I specialize in documenting live events, cultural programs, and people-focused stories with a strong sense of timing, composition, and visual storytelling. My work reflects a balance of creativity, clarity, and genuine emotion.</p>
                     <p>I have professional experience as a full-time videographer and photographer at KSR College of Arts and Science, where I covered major college events, cultural festivals, ceremonies, and institutional activities. I have also worked independently as a freelance event videographer and photographer, covering weddings, receptions, and private celebrations. Through these experiences, I've developed strong skills in handling live events, coordinating with teams, and capturing moments that define the atmosphere and energy of each occasion.</p>
                     <p>I am deeply passionate about storytelling through visuals and capturing moments that feel real and expressive. I have a strong interest in event and sports videography, where movement, emotion, and atmosphere come together to create powerful stories. Whether it's a cultural celebration or high-energy action, I am driven by the challenge of framing moments that represent authenticity, connection, and the true spirit of the event.</p>
@@ -271,12 +274,12 @@
                         <span>Jeevanandh S</span>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Salem, Tamil Nadu</span>
-                    </div>
-                    <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <a href="tel:7904599475">7904599475</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Salem, Tamil Nadu</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -340,6 +343,11 @@
                 }
             });
         });
+
+        function toggleNav() {
+            const menu = document.querySelector('#menu');
+            document.querySelector('nav').classList.toggle('open');
+        }
     </script>
 </body>
 </html> 
